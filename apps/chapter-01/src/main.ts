@@ -14,7 +14,7 @@ import { bootstrapApplication } from '@angular/platform-browser'
   `,
 })
 export class AppComponent {
-  name = 'Angular'
+  name = 'Chapter 01'
 }
 
 bootstrapApplication(AppComponent)
