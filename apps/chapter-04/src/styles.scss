@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+
+@import 'primeicons/primeicons.css';
+
+:root {
+  --font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+// Define a variable for primary color
+$primary-color: #5d738a;
+$text-color: #f8f4ef;
+
+body {
+  font-family: var(--font-family);
+  margin: 4rem;
+}
+
+// Customize the style of the .p-button classs using the variable
+.p-button {
+  background-color: $primary-color;
+  color: $text-color;
+}

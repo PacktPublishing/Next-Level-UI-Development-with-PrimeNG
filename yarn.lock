@@ -8777,6 +8777,18 @@ pretty-format@^29.0.0, pretty-format@^29.5.0:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
+primeicons@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-6.0.1.tgz#431fa7c79825934eefd62087d8e1faa6a9e376ad"
+  integrity sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==
+
+primeng@^16.0.2:
+  version "16.0.2"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-16.0.2.tgz#d6d8c8e84331019019b761a2511a2520ecdd0a63"
+  integrity sha512-gLFUSQ0fV5948yM1fMCv9oGaJ54AS8+HHSMOeR2lHWFiZzomxjXR0MST9yyAQ0NjrOlhke3BBpl+zYjISBeEJg==
+  dependencies:
+    tslib "^2.3.0"
+
 proc-log@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/proc-log/-/proc-log-3.0.0.tgz#fb05ef83ccd64fd7b20bbe9c8c1070fc08338dd8"
