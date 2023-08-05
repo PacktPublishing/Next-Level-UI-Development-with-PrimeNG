@@ -17,8 +17,16 @@ body {
   margin: 4rem;
 }
 
-// Customize the style of the .p-button classs using the variable
+// Define box shadow
+@mixin box-shadow($x, $y, $blur, $color) {
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+
+// Customize the style of the .p-button class using the variable
 .p-button {
   background-color: $primary-color;
   color: $text-color;
+  @include box-shadow(0, 0, 5px, #ccc);
 }

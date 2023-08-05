@@ -10,7 +10,6 @@ import { Component, WritableSignal, effect, signal } from '@angular/core'
     <p>Current count is: {{ count() }}</p>
     <button (click)="setRandomCount()">Set random count</button>
   `,
-  styles: [],
 })
 export class AngularSignalsComponent {
   public count: WritableSignal<number> = signal<number>(4)

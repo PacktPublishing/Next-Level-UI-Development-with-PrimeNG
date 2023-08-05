@@ -9,7 +9,7 @@ import {
   standalone: true,
   selector: 'primengbook-root',
   template: `
-    <h1>Welcome chapter-04</h1>
+    <h1>Welcome to chapter-04</h1>
 
     <!-- PrimeNg component approach -->
     <p-button label="Click me" />

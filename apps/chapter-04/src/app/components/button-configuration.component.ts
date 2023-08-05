@@ -15,8 +15,27 @@ import { ButtonModule } from 'primeng/button'
       iconPos="right"
       [disabled]="isDisabled"
     />
-  `,
+
+    <br><br>
+
+    <button
+      pButton
+      label="Click me!"
+      [loading]="loading"
+      (click)="onClickEvent()"
+    ></button>
+  `
 })
 export class ButtonConfigurationComponent {
   isDisabled = true
+  loading = false
+
+
+  onClickEvent() {
+    this.loading = true
+
+    setTimeout(() => {
+      this.loading = false
+    }, 20000)
+  }
 }
