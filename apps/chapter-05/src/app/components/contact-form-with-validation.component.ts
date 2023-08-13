@@ -1,6 +1,13 @@
 import { CommonModule } from '@angular/common'
 import { Component, inject } from '@angular/core'
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
+import {
+  FormBuilder,
+  FormsModule,
+  NgForm,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms'
+import { invalidNameValidator } from '@primengbook/shared/ui'
 import { ButtonModule } from 'primeng/button'
 import { CheckboxModule } from 'primeng/checkbox'
 import { InputMaskModule } from 'primeng/inputmask'
@@ -11,6 +18,7 @@ import { RadioButtonModule } from 'primeng/radiobutton'
   standalone: true,
   imports: [
     CommonModule,
+    FormsModule,
     ReactiveFormsModule,
     // PrimeNg Modules
     ButtonModule,
@@ -22,23 +30,52 @@ import { RadioButtonModule } from 'primeng/radiobutton'
   template: `
     <h2>Contact Form with Validation</h2>
 
+    <h3>Template Driven Form Validation</h3>
+
+    <form #form="ngForm" (ngSubmit)="onSubmitTemplate(form)" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          pInputText
+          name="first"
+          ngModel
+          required
+          minlength="4"
+          #name="ngModel"
+        />
+
+        <ng-container *ngIf="name.invalid && (name.dirty || name.touched)">
+          <div class="p-error" *ngIf="name.errors?.['required']">
+            This field is required
+          </div>
+          <div class="p-error" *ngIf="name.errors?.['minlength']">
+            Name must be at least 4 characters long.
+          </div>
+        </ng-container>
+      </div>
+
+      <button pButton type="submit">Submit</button>
+    </form>
+
+    <h3>Reactive Forms Validation</h3>
+
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="name">Name</label>
         <input pInputText id="name" type="text" formControlName="name" />
         <ng-container *ngIf="contactForm.controls.name as name">
-          <small
-            class="p-error"
-            *ngIf="name.dirty && name.hasError('required')"
-          >
+          <div class="p-error" *ngIf="name.dirty && name.hasError('required')">
             This field is required
-          </small>
-          <small
+          </div>
+          <div class="p-error" *ngIf="name.dirty && name.hasError('minlength')">
+            Name must be at least 4 characters long.
+          </div>
+          <div
             class="p-error"
-            *ngIf="name.dirty && name.hasError('minlength')"
+            *ngIf="name.dirty && name.hasError('invalidName')"
           >
-            The name is too short
-          </small>
+            Name cannot be "{{ name.errors?.['invalidName'].value }}".
+          </div>
         </ng-container>
       </div>
 
@@ -119,7 +156,15 @@ export default class ContactWithValidationComponent {
   private formBuilder = inject(FormBuilder)
 
   contactForm = this.formBuilder.group({
-    name: ['', [Validators.required, Validators.minLength(2)]],
+    name: [
+      '',
+      [
+        Validators.required,
+        Validators.minLength(4),
+        // custom validator
+        invalidNameValidator(/test/i),
+      ],
+    ],
     phone: ['', Validators.required],
     subscribe: [false],
     gender: ['', Validators.required],
@@ -131,7 +176,12 @@ export default class ContactWithValidationComponent {
     { name: 'Other', value: 'O' },
   ]
 
+  onSubmitTemplate(form: NgForm) {
+    console.log(form.value)
+  }
+
   onSubmit() {
+    console.log(this.contactForm)
     if (this.contactForm.valid) {
       console.log(this.contactForm.value)
     } else {

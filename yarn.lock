@@ -168,6 +168,15 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/cdk@16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-16.0.0.tgz#7e3b38ec17857433ae6cb6a7ad25f465f19be541"
+  integrity sha512-3hiNRB5kBOYv+MJRlpLX++KzY96mTivE7BXM/pNoR4Hiq7aBnoCtp0zbTc9J7gPn8POX6t/4WfAogslbkvQXSg==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^7.1.2"
+
 "@angular/cli@~16.0.0":
   version "16.0.6"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-16.0.6.tgz#87683054671c35ef0891e7331e55bb46f7136c24"
@@ -8352,7 +8361,7 @@ parse5@^6.0.1:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
 
-parse5@^7.0.0, parse5@^7.1.1:
+parse5@^7.0.0, parse5@^7.1.1, parse5@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.1.2.tgz#0736bebbfd77793823240a23b7fc5e010b7f8e32"
   integrity sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==
@@ -8777,15 +8786,20 @@ pretty-format@^29.0.0, pretty-format@^29.5.0:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
+primeflex@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/primeflex/-/primeflex-3.3.1.tgz#361dddf6eb5db50d733e4cddd4b6e376a3d7bd68"
+  integrity sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==
+
 primeicons@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-6.0.1.tgz#431fa7c79825934eefd62087d8e1faa6a9e376ad"
   integrity sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==
 
-primeng@^16.0.2:
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/primeng/-/primeng-16.0.2.tgz#d6d8c8e84331019019b761a2511a2520ecdd0a63"
-  integrity sha512-gLFUSQ0fV5948yM1fMCv9oGaJ54AS8+HHSMOeR2lHWFiZzomxjXR0MST9yyAQ0NjrOlhke3BBpl+zYjISBeEJg==
+primeng@^16.1.0:
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-16.1.0.tgz#93da60095a637463ecc962deb0e50ad5a51c4f4b"
+  integrity sha512-qqYQ2xO6EmiBEqvlKHIWJPrC90HVVQGitnrGurpdT9f8/Mkz0YCCo4GwLElKyHZ52STd+cw2MtoXa1sJRVR30g==
   dependencies:
     tslib "^2.3.0"
 

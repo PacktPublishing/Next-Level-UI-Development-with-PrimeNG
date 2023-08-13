@@ -26,6 +26,36 @@ import { CalendarModule } from 'primeng/calendar'
         <p-calendar ngModel name="calendarDateRange" selectionMode="range" />
       </div>
 
+      <div class="form-group">
+        <span>Calendar With Literal Text</span>
+        <p-calendar
+          ngModel
+          name="calendarLiteralText"
+          selectionMode="range"
+          dateFormat="'Day: 'dd 'Month: 'MM 'Year: 'yy"
+        />
+      </div>
+
+      <div class="form-group">
+        <span>Calendar With Single Quote</span>
+        <p-calendar
+          ngModel
+          name="calendarSingleQuote"
+          selectionMode="range"
+          dateFormat="'Today''s date is 'dd/MM/yy"
+        />
+      </div>
+
+      <div class="form-group">
+        <span>Calendar other format</span>
+        <p-calendar
+          ngModel
+          name="calendarOtherFormat"
+          selectionMode="range"
+          dateFormat="dd+MM+yy"
+        />
+      </div>
+
       <button pButton type="submit">Submit</button>
     </form>
 
