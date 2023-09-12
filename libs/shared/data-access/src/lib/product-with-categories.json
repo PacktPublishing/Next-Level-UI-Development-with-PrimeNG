@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "Macbook Pro",
+    "price": 1999,
+    "description": "Apple Macbook Pro laptop",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Electronics",
+    "subCategory": "Computers"
+  },
+  {
+    "id": 2,
+    "name": "Dell XPS",
+    "price": 1499,
+    "description": "Dell XPS laptop",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Electronics",
+    "subCategory": "Computers"
+  },
+  {
+    "id": 3,
+    "name": "HP Pavilion",
+    "price": 899,
+    "description": "HP Pavilion laptop",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Electronics",
+    "subCategory": "Computers"
+  },
+  {
+    "id": 4,
+    "name": "Microsoft Surface",
+    "price": 1299,
+    "description": "Microsoft Surface laptop",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Electronics",
+    "subCategory": "Computers"
+  },
+  {
+    "id": 5,
+    "name": "ASUS Zenbook",
+    "price": 1099,
+    "description": "ASUS Zenbook laptop",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Electronics",
+    "subCategory": "Computers"
+  },
+  {
+    "id": 6,
+    "name": "Lenovo ThinkPad",
+    "price": 1349,
+    "description": "Lenovo ThinkPad laptop",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Electronics",
+    "subCategory": "Computers"
+  },
+  {
+    "id": 7,
+    "name": "iPhone 13",
+    "price": 799,
+    "description": "Apple iPhone 13 smartphone",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Electronics",
+    "subCategory": "Phones"
+  },
+  {
+    "id": 8,
+    "name": "Samsung Galaxy S22",
+    "price": 849,
+    "description": "Samsung Galaxy S22 smartphone",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Electronics",
+    "subCategory": "Phones"
+  },
+  {
+    "id": 9,
+    "name": "Google Pixel 6",
+    "price": 599,
+    "description": "Google Pixel 6 smartphone",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Electronics",
+    "subCategory": "Phones"
+  },
+  {
+    "id": 10,
+    "name": "OnePlus 10 Pro",
+    "price": 899,
+    "description": "OnePlus 10 Pro smartphone",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Electronics",
+    "subCategory": "Phones"
+  },
+  {
+    "id": 11,
+    "name": "Xiaomi 12",
+    "price": 749,
+    "description": "Xiaomi 12 smartphone",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Electronics",
+    "subCategory": "Phones"
+  },
+  {
+    "id": 12,
+    "name": "OPPO Find X5",
+    "price": 999,
+    "description": "OPPO Find X5 smartphone",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Electronics",
+    "subCategory": "Phones"
+  },
+  {
+    "id": 13,
+    "name": "LG C1 OLED",
+    "price": 1649,
+    "description": "LG C1 OLED TV",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Electronics",
+    "subCategory": "TVs"
+  },
+  {
+    "id": 14,
+    "name": "Sony X90J",
+    "price": 1049,
+    "description": "Sony X90J TV",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Electronics",
+    "subCategory": "TVs"
+  },
+  {
+    "id": 15,
+    "name": "TCL 6-Series",
+    "price": 899,
+    "description": "TCL 6-Series TV",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Electronics",
+    "subCategory": "TVs"
+  },
+  {
+    "id": 16,
+    "name": "Hisense U8G",
+    "price": 1249,
+    "description": "Hisense U8G TV",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Electronics",
+    "subCategory": "TVs"
+  },
+  {
+    "id": 17,
+    "name": "Samsung Q80A",
+    "price": 1149,
+    "description": "Samsung Q80A TV",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Electronics",
+    "subCategory": "TVs"
+  },
+  {
+    "id": 18,
+    "name": "Vizio P-Series Quantum",
+    "price": 1399,
+    "description": "Vizio P-Series Quantum TV",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Electronics",
+    "subCategory": "TVs"
+  },
+  {
+    "id": 19,
+    "name": "Sofa Set",
+    "price": 1299,
+    "description": "Sofa set for living room",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Home & Garden",
+    "subCategory": "Furniture"
+  },
+  {
+    "id": 20,
+    "name": "Loveseat",
+    "price": 899,
+    "description": "Loveseat for living room",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Home & Garden",
+    "subCategory": "Furniture"
+  },
+  {
+    "id": 21,
+    "name": "Armchair",
+    "price": 399,
+    "description": "Armchair for living room",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Home & Garden",
+    "subCategory": "Furniture"
+  },
+  {
+    "id": 22,
+    "name": "Coffee Table",
+    "price": 249,
+    "description": "Coffee table for living room",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Home & Garden",
+    "subCategory": "Furniture"
+  },
+  {
+    "id": 23,
+    "name": "Queen Bed",
+    "price": 649,
+    "description": "Queen bed for bedroom",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Home & Garden",
+    "subCategory": "Furniture"
+  },
+  {
+    "id": 24,
+    "name": "Dining Table Set",
+    "price": 749,
+    "description": "Dining table set for dining room",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Home & Garden",
+    "subCategory": "Furniture"
+  },
+  {
+    "id": 25,
+    "name": "Patio Set",
+    "price": 499,
+    "description": "Patio set for outdoor",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Home & Garden",
+    "subCategory": "Out door"
+  },
+  {
+    "id": 26,
+    "name": "Charcoal Grill",
+    "price": 299,
+    "description": "Charcoal grill for outdoor",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Home & Garden",
+    "subCategory": "Outdoor"
+  },
+  {
+    "id": 27,
+    "name": "String Lights",
+    "price": 79.99,
+    "description": "String lights for outdoor",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Home & Garden",
+    "subCategory": "Outdoor"
+  },
+  {
+    "id": 28,
+    "name": "Garden Faucet",
+    "price": 59.99,
+    "description": "Garden faucet for outdoor",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Home & Garden",
+    "subCategory": "Outdoor"
+  },
+  {
+    "id": 29,
+    "name": "Lawn Mower",
+    "price": 249,
+    "description": "Lawn mower for outdoor",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Home & Garden",
+    "subCategory": "Outdoor"
+  },
+  {
+    "id": 30,
+    "name": "Hammock",
+    "price": 79.99,
+    "description": "Hammock for outdoor",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Home & Garden",
+    "subCategory": "Outdoor"
+  },
+  {
+    "id": 31,
+    "name": "Where the Crawdads Sing",
+    "price": 16.99,
+    "description": "Novel by Delia Owens",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 32,
+    "name": "It Ends With Us",
+    "price": 14.99,
+    "description": "Novel by Colleen Hoover",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 33,
+    "name": "Verity",
+    "price": 15.99,
+    "description": "Novel by Colleen Hoover",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 34,
+    "name": "Atlas of the Heart",
+    "price": 18.99,
+    "description": "Book by Brené Brown",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 35,
+    "name": "Ocean Prey",
+    "price": 13.99,
+    "description": "Novel by Clive Cussler",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 36,
+    "name": "The Seven Husbands of Evelyn Hugo",
+    "price": 15.99,
+    "description": "Novel by Taylor Jenkins Reid",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 37,
+    "name": "Spiderman Blu-ray",
+    "price": 19.99,
+    "description": "Blu-ray of the movie Spiderman",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 38,
+    "name": "Lord of the Rings Box Set",
+    "price": 49.99,
+    "description": "Box set of the Lord of the Rings movies",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 39,
+    "name": "Harry Potter Box Set",
+    "price": 39.99,
+    "description": "Box set of the Harry Potter books",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 40,
+    "name": "Game of Thrones Box Set",
+    "price": 59.99,
+    "description": "Box set of the Game of Thrones books",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Books & Media",
+    "subCategory": "Books"
+  },
+  {
+    "id": 41,
+    "name": "The Notebook",
+    "price": 14.99,
+    "description": "Movie rental of The Notebook",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 42,
+    "name": "The Shawshank Redemption",
+    "price": 14.99,
+    "description": "Movie rental of The Shawshank Redemption",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 43,
+    "name": "The Godfather",
+    "price": 14.99,
+    "description": "Movie rental of The Godfather",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 44,
+    "name": "The Dark Knight",
+    "price": 14.99,
+    "description": "Movie rental of The Dark Knight",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 45,
+    "name": "The Lord of the Rings: The Return of the King",
+    "price": 14.99,
+    "description": "Movie rental of The Lord of the Rings: The Return of the King",
+    "quantity": 20,
+    "rating": 4.0,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 46,
+    "name": "Titanic",
+    "price": 14.99,
+    "description": "Movie rental of Titanic",
+    "quantity": 12,
+    "rating": 4.3,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 47,
+    "name": "The Avengers",
+    "price": 14.99,
+    "description": "Movie rental of The Avengers",
+    "quantity": 18,
+    "rating": 4.4,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 48,
+    "name": "Star Wars: The Force Awakens",
+    "price": 14.99,
+    "description": "Movie rental of Star Wars: The Force Awakens",
+    "quantity": 14,
+    "rating": 4.1,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 49,
+    "name": "Jurassic World",
+    "price": 14.99,
+    "description": "Movie rental of Jurassic World",
+    "quantity": 10,
+    "rating": 4.5,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  },
+  {
+    "id": 50,
+    "name": "Frozen",
+    "price": 14.99,
+    "description": "Movie rental of Frozen",
+    "quantity": 15,
+    "rating": 4.2,
+    "category": "Books & Media",
+    "subCategory": "Movies & TV"
+  }
+]
