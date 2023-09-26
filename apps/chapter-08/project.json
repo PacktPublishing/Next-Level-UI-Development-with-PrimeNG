@@ -1,0 +1,81 @@
+{
+  "name": "chapter-08",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "primengbook",
+  "sourceRoot": "apps/chapter-08/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/chapter-08",
+        "index": "apps/chapter-08/src/index.html",
+        "main": "apps/chapter-08/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/chapter-08/tsconfig.app.json",
+        "assets": [
+          "apps/chapter-08/src/favicon.ico",
+          "apps/chapter-08/src/assets"
+        ],
+        "styles": ["apps/chapter-08/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "chapter-08:build:production"
+        },
+        "development": {
+          "browserTarget": "chapter-08:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "chapter-08:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/chapter-08/**/*.ts",
+          "apps/chapter-08/**/*.html"
+        ]
+      }
+    }
+  }
+}
