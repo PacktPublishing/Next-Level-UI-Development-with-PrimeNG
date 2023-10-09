@@ -1,0 +1,40 @@
+import { CommonModule } from '@angular/common'
+import { Component } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { PRODUCTS } from '@primengbook/shared/data-access'
+import { InputTextModule } from 'primeng/inputtext'
+import { ProductListComponent } from './product-list.component'
+
+@Component({
+  standalone: true,
+  imports: [CommonModule, ProductListComponent, FormsModule, InputTextModule],
+  template: `
+    <h2>Products</h2>
+    <div class="p-input-icon-left mb-8">
+      <i class="pi pi-search"></i>
+      <input
+        type="text"
+        pInputText
+        [(ngModel)]="productName"
+        (keyup)="filterProduct()"
+      />
+    </div>
+    <primengbook-product-list [products]="filteredProducts" />
+    <primengbook-product-list [products]="anotherProducts" />
+  `,
+})
+export default class ProductsComponent {
+  filteredProducts = PRODUCTS.slice(0, 25)
+  anotherProducts = PRODUCTS.slice(25, 50)
+  productName = ''
+
+  filterProduct() {
+    if (this.productName) {
+      this.filteredProducts = PRODUCTS.slice(0, 25).filter((product) =>
+        product.name.includes(this.productName)
+      )
+    } else {
+      this.filteredProducts = PRODUCTS.slice(0, 25)
+    }
+  }
+}
