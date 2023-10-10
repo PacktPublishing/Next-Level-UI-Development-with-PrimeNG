@@ -34,3 +34,9 @@ npx nx serve CHAPTER_NAME
 // example
 npx nx serve chapter-1
 ```
+
+## Disclaimers
+
+I'm using Nx Workspace to manage the chapters. It works the same a normal Angular project.
+
+One thing that you should notice is that instead `angular.json`, it is `project.json`. 
