@@ -16,7 +16,7 @@ import { ButtonModule } from 'primeng/button'
       [disabled]="isDisabled"
     />
 
-    <br><br>
+    <br /><br />
 
     <button
       pButton
@@ -24,12 +24,21 @@ import { ButtonModule } from 'primeng/button'
       [loading]="loading"
       (click)="onClickEvent()"
     ></button>
-  `
+
+    <br /><br />
+
+    <input
+      type="button"
+      pButton
+      value="Input Button"
+      (click)="onClickEvent()"
+    />
+    <a href="" pButton (click)="onClickEvent()">Link Button</a>
+  `,
 })
 export class ButtonConfigurationComponent {
   isDisabled = true
   loading = false
-
 
   onClickEvent() {
     this.loading = true
