@@ -5,6 +5,7 @@ import {
   AngularServicesComponent,
   AngularSignalsComponent,
   DataBindingComponent,
+  DependencyInjectionComponent,
 } from './components'
 
 @Component({
@@ -13,6 +14,7 @@ import {
   template: `
     <h1>Welcome chapter-03</h1>
     <primengbook-data-binding />
+    <primengbook-dependency-injection />
     <primengbook-angular-services />
     <primengbook-angular-directives />
     <primengbook-angular-pipes />
@@ -24,6 +26,7 @@ import {
     AngularDirectivesComponent,
     AngularSignalsComponent,
     AngularPipesComponent,
+    DependencyInjectionComponent,
   ],
 })
 export class AppComponent {}
