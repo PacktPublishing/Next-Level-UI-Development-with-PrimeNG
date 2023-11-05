@@ -20,9 +20,10 @@ interface Product {
   imports: [CommonModule, CardModule, ButtonModule, DeferModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="grid gap-4" pDefer>
+    <div pDefer>
       <ng-template>
         <p-card
+          class="mb-4 block"
           *ngFor="let product of products"
           [header]="product.name"
           [style]="{ width: '300px' }"

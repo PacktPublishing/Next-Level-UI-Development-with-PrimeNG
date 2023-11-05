@@ -1,13 +1,21 @@
 import { CommonModule } from '@angular/common'
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { PRODUCTS } from '@primengbook/shared/data-access'
+import { DeferModule } from 'primeng/defer'
 import { InputTextModule } from 'primeng/inputtext'
+import { ProductService } from '../services/product.service'
 import { ProductListComponent } from './product-list.component'
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ProductListComponent, FormsModule, InputTextModule],
+  imports: [
+    CommonModule,
+    ProductListComponent,
+    FormsModule,
+    InputTextModule,
+    DeferModule,
+  ],
   template: `
     <h2>Products</h2>
     <div class="p-input-icon-left mb-8">
@@ -20,12 +28,27 @@ import { ProductListComponent } from './product-list.component'
       />
     </div>
     <primengbook-product-list [products]="filteredProducts" />
-    <primengbook-product-list [products]="anotherProducts" />
+
+    <div pDefer (onLoad)="loadAnotherProducts()">
+      <ng-template>
+        <primengbook-product-list [products]="anotherProducts" />
+      </ng-template>
+    </div>
   `,
 })
 export default class ProductsComponent {
+  private productService = inject(ProductService)
+
   filteredProducts = PRODUCTS.slice(0, 25)
-  anotherProducts = PRODUCTS.slice(25, 50)
+  anotherProducts: {
+    id: number
+    name: string
+    price: number
+    description: string
+    quantity: number
+    rating: number
+    category: string
+  }[] = []
   productName = ''
 
   filterProduct() {
@@ -36,5 +59,10 @@ export default class ProductsComponent {
     } else {
       this.filteredProducts = PRODUCTS.slice(0, 25)
     }
+  }
+
+  async loadAnotherProducts() {
+    // mimic loading products from API
+    this.anotherProducts = this.productService.loadProducts()
   }
 }

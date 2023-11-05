@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common'
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { PRODUCTS_TREENODE } from '@primengbook/shared/data-access'
 import { TreeNode } from 'primeng/api'
 import { ButtonModule } from 'primeng/button'
 import { TreeModule, TreeNodeSelectEvent } from 'primeng/tree'
+import { NodeService } from '../services/node.service'
 
 @Component({
   standalone: true,
@@ -55,6 +56,8 @@ import { TreeModule, TreeNodeSelectEvent } from 'primeng/tree'
   `,
 })
 export default class TreeComponent {
+  private nodeService = inject(NodeService)
+
   products: TreeNode[] = structuredClone(PRODUCTS_TREENODE)
   productsWithExpandingAndCollapsing: TreeNode[] =
     structuredClone(PRODUCTS_TREENODE)
@@ -101,20 +104,14 @@ export default class TreeComponent {
   }
 
   loadChildNodes(event: TreeNodeSelectEvent) {
-    console.log(event)
-
     if (event.node) {
       this.loading = true
 
-      //  this.nodeService.getChildNodes(event.node).then((nodes) => {
-      //    event.node.children = nodes
-      //    this.loading = true
-      // })
-
+      // mimic waiting time for loading child node
       setTimeout(() => {
-        // get node logics
+        event.node.children = this.nodeService.getChildNodes(event.node)
         this.loading = false
-      }, 200)
+      }, 2000)
     }
   }
 }
