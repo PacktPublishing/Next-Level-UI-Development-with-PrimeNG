@@ -59,7 +59,11 @@ export default class MenuComponent {
     {
       label: 'Electronics',
       items: [
-        { label: 'Computers', routerLink: '/products/computers' },
+        {
+          label: 'Computers',
+          // mimic current active menu
+          routerLink: '/menu',
+        },
         { label: 'Smartphones', routerLink: '/products/smartphones' },
         { label: 'Televisions', routerLink: '/products/televisions' },
       ],
