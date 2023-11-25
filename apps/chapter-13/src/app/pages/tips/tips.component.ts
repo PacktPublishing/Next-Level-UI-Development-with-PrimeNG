@@ -186,7 +186,6 @@ export class TipsComponent {
         this.products.splice(index, 1)
       },
       reject: (type: ConfirmEventType) => {
-        // console.log({ type })
         switch (type) {
           case ConfirmEventType.REJECT:
             this.messageService.add({

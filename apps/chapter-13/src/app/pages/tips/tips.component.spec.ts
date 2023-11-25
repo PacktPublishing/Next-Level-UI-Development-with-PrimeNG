@@ -12,7 +12,7 @@ import { ConfirmDialog } from 'primeng/confirmdialog'
 import { ShopService } from '../../shared/services'
 import { TipsComponent } from './tips.component'
 
-const mockProducts = [
+const productsStub = [
   {
     id: 1,
     name: 'Product 1',
@@ -48,7 +48,7 @@ describe('TipsComponent', () => {
         {
           provide: ShopService,
           useValue: {
-            getProducts: jest.fn().mockReturnValue(mockProducts),
+            getProducts: jest.fn().mockReturnValue(productsStub),
           },
         },
       ],

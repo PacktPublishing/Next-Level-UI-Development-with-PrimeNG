@@ -6,7 +6,7 @@ import {
 import { ShopService } from '../../shared/services'
 import { TipsComponent } from './tips.component'
 
-const mockProducts = [
+const productsStub = [
   {
     id: 1,
     name: 'Product 1',
@@ -34,7 +34,7 @@ describe('TipsComponent', () => {
     component: TipsComponent,
     providers: [
       mockProvider(ShopService, {
-        getProducts: () => mockProducts,
+        getProducts: () => productsStub,
       }),
     ],
   })
