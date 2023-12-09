@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "chapter-03:build:production"
+          "buildTarget": "chapter-03:build:production"
         },
         "development": {
-          "browserTarget": "chapter-03:build:development"
+          "buildTarget": "chapter-03:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,31 +64,18 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "chapter-03:build"
+        "buildTarget": "chapter-03:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/chapter-03/**/*.ts",
-          "apps/chapter-03/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/chapter-03/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/chapter-03/jest.config.ts"
       }
     },
     "serve-static": {
