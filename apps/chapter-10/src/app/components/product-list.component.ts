@@ -18,8 +18,9 @@ interface Product {
   selector: 'primengbook-product-list',
   standalone: true,
   imports: [CommonModule, CardModule, ButtonModule, DeferModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
   template: `
+    {{ changeDetectionTriggered() }}
     <div pDefer>
       <ng-template>
         <p-card
@@ -78,5 +79,9 @@ export class ProductListComponent {
       num2 = sum
     }
     return num2
+  }
+
+  changeDetectionTriggered() {
+    console.log('PRODUCT LIST - CD Triggered')
   }
 }

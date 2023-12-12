@@ -8,18 +8,24 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/chapter-10",
         "index": "apps/chapter-10/src/index.html",
         "main": "apps/chapter-10/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/chapter-10/tsconfig.app.json",
         "assets": [
           "apps/chapter-10/src/favicon.ico",
           "apps/chapter-10/src/assets"
         ],
-        "styles": ["apps/chapter-10/src/styles.scss"],
+        "styles": [
+          "apps/chapter-10/src/styles.scss"
+        ],
         "scripts": [],
         "sourceMap": true
       },
@@ -29,7 +35,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "1.5mb"
             },
             {
               "type": "anyComponentStyle",
@@ -70,7 +76,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     }
   }
 }

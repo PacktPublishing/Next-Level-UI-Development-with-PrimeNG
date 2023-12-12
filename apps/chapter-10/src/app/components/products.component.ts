@@ -1,23 +1,19 @@
 import { CommonModule } from '@angular/common'
-import { Component, inject } from '@angular/core'
+import { ChangeDetectionStrategy, Component } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { PRODUCTS } from '@primengbook/shared/data-access'
-import { DeferModule } from 'primeng/defer'
 import { InputTextModule } from 'primeng/inputtext'
-import { ProductService } from '../services/product.service'
+import { ProductListDeferComponent } from './product-list-defer.component'
 import { ProductListComponent } from './product-list.component'
 
 @Component({
   standalone: true,
-  imports: [
-    CommonModule,
-    ProductListComponent,
-    FormsModule,
-    InputTextModule,
-    DeferModule,
-  ],
+  changeDetection: ChangeDetectionStrategy.Default,
   template: `
     <h2>Products</h2>
+
+    {{ changeDetectionTriggered() }}
+
     <div class="p-input-icon-left mb-8">
       <i class="pi pi-search"></i>
       <input
@@ -29,26 +25,19 @@ import { ProductListComponent } from './product-list.component'
     </div>
     <primengbook-product-list [products]="filteredProducts" />
 
-    <div pDefer (onLoad)="loadAnotherProducts()">
-      <ng-template>
-        <primengbook-product-list [products]="anotherProducts" />
-      </ng-template>
-    </div>
+    <primengbook-product-list-defer />
   `,
+  imports: [
+    CommonModule,
+    ProductListComponent,
+    FormsModule,
+    InputTextModule,
+    ProductListDeferComponent,
+  ],
 })
 export default class ProductsComponent {
-  private productService = inject(ProductService)
-
   filteredProducts = PRODUCTS.slice(0, 25)
-  anotherProducts: {
-    id: number
-    name: string
-    price: number
-    description: string
-    quantity: number
-    rating: number
-    category: string
-  }[] = []
+
   productName = ''
 
   filterProduct() {
@@ -61,8 +50,7 @@ export default class ProductsComponent {
     }
   }
 
-  async loadAnotherProducts() {
-    // mimic loading products from API
-    this.anotherProducts = this.productService.loadProducts()
+  changeDetectionTriggered() {
+    console.log('PRODUCTS - CD Triggered')
   }
 }

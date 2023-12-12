@@ -53,8 +53,8 @@ interface Product {
         </div>
       </ng-template>
 
-      <ng-template pTemplate="listItem" let-product>
-        <div class="col-12">
+      <ng-template pTemplate="list" let-products>
+        <div class="col-12" *ngFor="let product of products">
           <div
             class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4"
           >

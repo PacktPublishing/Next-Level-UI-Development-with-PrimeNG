@@ -10,7 +10,7 @@ import { MenuModule } from 'primeng/menu'
   selector: 'primengbook-root',
   template: `
     <h1 [routerLink]="['/']">Welcome to chapter-10</h1>
-
+    {{ changeDetectionTriggered() }}
     <div class="flex flex-wrap gap-7">
       <aside>
         <nav>
@@ -46,4 +46,8 @@ export class AppComponent {
       routerLink: 'optimized-data-binding',
     },
   ]
+
+  changeDetectionTriggered() {
+    console.log('APP - CD Triggered')
+  }
 }
