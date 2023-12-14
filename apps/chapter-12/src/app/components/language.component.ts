@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common'
+import { CommonModule, DOCUMENT } from '@angular/common'
 import { Component, inject } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { TranslateService } from '@ngx-translate/core'
@@ -25,20 +25,23 @@ export class LanguageComponent {
   private translateService = inject(TranslateService)
   private i18nService = inject(I18nService)
   private primeNgConfig = inject(PrimeNGConfig)
+  private document = inject(DOCUMENT)
 
   currentLang = this.i18nService.currentLang
 
   languages = [
     {
       label: 'English',
-
       value: 'en',
     },
 
     {
       label: 'Tiếng Việt',
-
       value: 'vi',
+    },
+    {
+      label: 'الفيتنامية',
+      value: 'ar',
     },
   ]
 
@@ -47,6 +50,8 @@ export class LanguageComponent {
   }
 
   switchLanguage(event: DropdownChangeEvent) {
+    this.updateHtmlTag(event.value)
+
     this.translateService.use(event.value)
     this.i18nService.currentLang = event.value
 
@@ -54,5 +59,16 @@ export class LanguageComponent {
       console.log(res)
       this.primeNgConfig.setTranslation(res)
     })
+  }
+
+  private updateHtmlTag(lang: string) {
+    let direction = 'ltr'
+
+    if (['ar'].includes(lang)) {
+      direction = 'rtl'
+    }
+
+    this.document.getElementsByTagName('html')[0].setAttribute('lang', lang)
+    this.document.getElementsByTagName('body')[0].setAttribute('dir', direction)
   }
 }
