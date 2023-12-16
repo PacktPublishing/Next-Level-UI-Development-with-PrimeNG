@@ -5,6 +5,7 @@ import { AppComponent } from './app.component'
 
 describe('AppComponent', () => {
   beforeEach(async () => {
+    // Arrange
     await TestBed.configureTestingModule({
       imports: [AppComponent, RouterTestingModule],
       providers: [provideNoopAnimations()],
@@ -12,9 +13,14 @@ describe('AppComponent', () => {
   })
 
   it('should render title', () => {
+    // Arrange
     const fixture = TestBed.createComponent(AppComponent)
-    fixture.detectChanges()
     const compiled = fixture.nativeElement as HTMLElement
+
+    // Act
+    fixture.detectChanges()
+
+    // Assert
     expect(compiled.querySelector('h1')?.textContent).toContain(
       'Welcome to chapter-13'
     )
