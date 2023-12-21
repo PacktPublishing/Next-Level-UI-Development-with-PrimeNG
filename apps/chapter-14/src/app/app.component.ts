@@ -1,12 +1,11 @@
 import { Component } from '@angular/core'
-import { RouterModule } from '@angular/router'
+import { LandingComponent } from './pages/landing/landing.component'
 
 @Component({
   standalone: true,
-  imports: [RouterModule],
   selector: 'primengbook-root',
-  template: ` <h1>Welcome to chapter-14</h1>
-    <router-outlet />`,
+  template: ` <primengbook-landing />`,
   styles: ``,
+  imports: [LandingComponent],
 })
 export class AppComponent {}
