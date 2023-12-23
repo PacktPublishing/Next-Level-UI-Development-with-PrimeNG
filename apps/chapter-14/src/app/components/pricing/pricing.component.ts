@@ -9,7 +9,7 @@ import { RippleModule } from 'primeng/ripple'
   standalone: true,
   imports: [CommonModule, DividerModule, ButtonModule, RippleModule],
   template: `
-    <div id="pricing" class="py-4 px-4 lg:px-8 my-2 md:my-4">
+    <section id="pricing" class="py-4 px-4 lg:px-8 my-2 md:my-4">
       <div class="text-center">
         <h2 class="text-900 font-normal mb-2">Choose the Perfect Plan</h2>
         <span class="text-600 text-2xl"
@@ -37,7 +37,7 @@ import { RippleModule } from 'primeng/ripple'
                 class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"
               ></button>
             </div>
-            <p-divider class="w-full bg-surface-200"></p-divider>
+            <p-divider class="w-full bg-surface-200" />
             <ul class="my-5 list-none p-0 flex text-900 flex-column">
               <li class="py-2" *ngFor="let feature of plan.features">
                 <i class="pi pi-fw pi-check text-xl text-cyan-500 mr-2"></i>
@@ -47,9 +47,8 @@ import { RippleModule } from 'primeng/ripple'
           </div>
         </div>
       </div>
-    </div>
+    </section>
   `,
-  styles: ``,
 })
 export class PricingComponent {
   plans = [
@@ -60,7 +59,7 @@ export class PricingComponent {
         'Access to core features',
         'Email support',
         'Standard storage',
-        'Limited storage',
+        'Limited bandwidth',
       ],
       cta: 'Get Started',
     },

@@ -7,11 +7,11 @@ import { NavService } from '../../shared/services/nav.service'
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="py-4 px-4 mx-0 mt-8 lg:mx-8">
+    <footer class="py-4 px-4 mx-0 mt-8 lg:mx-8">
       <div class="grid justify-content-between">
         <div class="col-12 md:col-2" style="margin-top:-1.5rem;">
           <a
-            (click)="navService.navigateTo('home')"
+            (click)="navService.navigateTo('header')"
             class="flex flex-wrap align-items-center justify-content-center md:justify-content-start md:mb-0 mb-3 cursor-pointer"
           >
             <h4 class="font-medium text-3xl text-900">PRIMEBOOK</h4>
@@ -77,9 +77,8 @@ import { NavService } from '../../shared/services/nav.service'
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   `,
-  styles: ``,
 })
 export class FooterComponent {
   navService = inject(NavService)

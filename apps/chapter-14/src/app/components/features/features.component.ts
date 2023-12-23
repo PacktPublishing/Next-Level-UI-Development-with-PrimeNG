@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div id="features" class="py-4 px-4 lg:px-8 mt-5 mx-0 lg:mx-8">
+    <section id="features" class="py-4 px-4 lg:px-8 mt-5 mx-0 lg:mx-8">
       <div class="grid justify-content-center">
         <div class="col-12 text-center mt-8 mb-4">
           <h2 class="text-900 font-normal mb-2">Our Features</h2>
@@ -35,9 +35,8 @@ import { Component } from '@angular/core'
           </div>
         </div>
       </div>
-    </div>
+    </section>
   `,
-  styles: ``,
 })
 export class FeaturesComponent {
   features = [

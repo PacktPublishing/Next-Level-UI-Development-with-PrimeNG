@@ -10,7 +10,8 @@ import { NavService } from '../../shared/services/nav.service'
   standalone: true,
   imports: [CommonModule, ButtonModule, RippleModule, StyleClassModule],
   template: `
-    <div
+    <header
+      id="header"
       class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 flex align-items-center justify-content-between relative lg:static mb-3"
     >
       <a class="flex align-items-center" href="#">
@@ -19,7 +20,6 @@ import { NavService } from '../../shared/services/nav.service'
         >
       </a>
       <a
-        pRipple
         class="cursor-pointer block lg:hidden text-700"
         pStyleClass="@next"
         enterFromClass="hidden"
@@ -27,7 +27,7 @@ import { NavService } from '../../shared/services/nav.service'
       >
         <i class="pi pi-bars text-4xl"></i>
       </a>
-      <div
+      <nav
         class="align-items-center surface-0 flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-6 lg:px-0 z-2"
         style="top:120px"
       >
@@ -36,8 +36,7 @@ import { NavService } from '../../shared/services/nav.service'
         >
           <li>
             <a
-              (click)="navService.navigateTo('home')"
-              pRipple
+              (click)="navService.navigateTo('header')"
               class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3"
             >
               <span>Home</span>
@@ -46,7 +45,6 @@ import { NavService } from '../../shared/services/nav.service'
           <li>
             <a
               (click)="navService.navigateTo('features')"
-              pRipple
               class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3"
             >
               <span>Features</span>
@@ -55,7 +53,6 @@ import { NavService } from '../../shared/services/nav.service'
           <li>
             <a
               (click)="navService.navigateTo('testimonials')"
-              pRipple
               class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3"
             >
               <span>Testimonials</span>
@@ -64,7 +61,6 @@ import { NavService } from '../../shared/services/nav.service'
           <li>
             <a
               (click)="navService.navigateTo('pricing')"
-              pRipple
               class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3"
             >
               <span>Pricing</span>
@@ -87,10 +83,9 @@ import { NavService } from '../../shared/services/nav.service'
             class="p-button-rounded border-none ml-5 font-light line-height-2 bg-blue-500 text-white"
           ></button>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   `,
-  styles: ``,
 })
 export class HeaderComponent {
   navService = inject(NavService)

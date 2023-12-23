@@ -7,7 +7,8 @@ import { CarouselModule } from 'primeng/carousel'
   standalone: true,
   imports: [CommonModule, CarouselModule],
   template: `
-    <div
+    <section
+      id="testimonials"
       class="col-12 mt-8 mb-8 p-2 md:p-8"
       style="border-radius:20px; background:linear-gradient(50deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), radial-gradient(77.36% 256.97% at 77.36% 57.52%, #EFA1AF 0%, #C3ECFA 100%);"
     >
@@ -38,7 +39,7 @@ import { CarouselModule } from 'primeng/carousel'
           </div>
         </ng-template>
       </p-carousel>
-    </div>
+    </section>
   `,
 })
 export class TestimonialsComponent {

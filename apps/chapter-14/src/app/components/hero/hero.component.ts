@@ -1,14 +1,15 @@
 import { CommonModule } from '@angular/common'
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { ButtonModule } from 'primeng/button'
 import { RippleModule } from 'primeng/ripple'
+import { NavService } from '../../shared/services/nav.service'
 
 @Component({
   selector: 'primengbook-hero',
   standalone: true,
   imports: [CommonModule, ButtonModule, RippleModule],
   template: `
-    <div
+    <section
       id="hero"
       class="flex flex-column pt-4 px-4 lg:px-8 overflow-hidden"
       style="background: radial-gradient(120% 100% at top left,transparent 92%, #fff 92.5%), linear-gradient(135deg, #51a595 0%, #3fcfa2 100%);"
@@ -25,6 +26,7 @@ import { RippleModule } from 'primeng/ripple'
         <button
           pButton
           pRipple
+          (click)="navService.navigateTo('pricing')"
           type="button"
           label="Get Started"
           class="p-button-rounded text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"
@@ -37,8 +39,9 @@ import { RippleModule } from 'primeng/ripple'
           class="w-9 md:w-auto"
         />
       </div>
-    </div>
+    </section>
   `,
-  styles: ``,
 })
-export class HeroComponent {}
+export class HeroComponent {
+  navService = inject(NavService)
+}
