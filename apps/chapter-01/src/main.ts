@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common'
-import { Component } from '@angular/core'
+import { Component, OnInit, inject } from '@angular/core'
 import { bootstrapApplication } from '@angular/platform-browser'
+import { PrimeNGConfig } from 'primeng/api'
 import { ButtonModule } from 'primeng/button'
+import { RippleModule } from 'primeng/ripple'
 
 @Component({
   selector: 'primengbook-root',
   standalone: true,
-  imports: [CommonModule, ButtonModule],
+  imports: [CommonModule, ButtonModule, RippleModule],
   template: `
     <h1>Hello from {{ name }}!</h1>
     <a target="_blank" href="https://angular.io/start">
@@ -30,8 +32,14 @@ import { ButtonModule } from 'primeng/button'
     </section>
   `,
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  private primengConfig = inject(PrimeNGConfig)
+
   name = 'Chapter 01'
+
+  ngOnInit() {
+    this.primengConfig.ripple = true
+  }
 }
 
 bootstrapApplication(AppComponent)
