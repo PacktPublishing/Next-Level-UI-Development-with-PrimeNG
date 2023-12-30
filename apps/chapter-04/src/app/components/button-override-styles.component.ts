@@ -11,13 +11,11 @@ import { ButtonModule } from 'primeng/button'
 
     <button pButton type="button" label="Custom styles"></button>
   `,
-  styles: [
-    `
+  styles: `
       .p-button {
         background-color: #696cff;
         border-radius: 5px;
       }
     `,
-  ],
 })
 export class ButtonOverrideStylesComponent {}
