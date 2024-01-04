@@ -1,0 +1,126 @@
+[
+  {
+    "key": "0",
+    "label": "Electronics",
+    "data": "Category Level",
+    "icon": "pi pi-tablet",
+    "children": [
+      {
+        "key": "0-0",
+        "label": "Computers",
+        "data": "SubCategory Level",
+        "icon": "pi pi-desktop",
+        "children": [
+          {
+            "key": "0-0-0",
+            "label": "MacBook Air",
+            "data": "Product Level",
+            "icon": "pi pi-apple"
+          },
+          {
+            "key": "0-0-1",
+            "label": "MacBook Pro",
+            "data": "Product Level",
+            "icon": "pi pi-apple"
+          },
+          {
+            "key": "0-0-2",
+            "label": "PC",
+            "data": "Product Level",
+            "icon": "pi pi-desktop"
+          },
+          {
+            "key": "0-0-3",
+            "label": "Tablet",
+            "data": "Product Level",
+            "icon": "pi pi-tablet"
+          },
+          {
+            "key": "0-0-4",
+            "label": "Smartphone",
+            "data": "Product Level",
+            "icon": "pi pi-mobile"
+          },
+          {
+            "key": "0-0-5",
+            "label": "Fitness Tracker",
+            "data": "Product Level",
+            "icon": "pi pi-heart"
+          }
+        ]
+      },
+      {
+        "key": "0-1",
+        "label": "Phones",
+        "data": "SubCategory Level",
+        "icon": "pi pi-phone",
+        "children": [
+          {
+            "key": "0-1-0",
+            "label": "iPhone",
+            "data": "Product Level",
+            "icon": "pi pi-apple"
+          },
+          {
+            "key": "0-1-1",
+            "label": "Samsung",
+            "data": "Product Level",
+            "icon": "pi pi-android"
+          },
+          {
+            "key": "0-1-2",
+            "label": "Google Pixel",
+            "data": "Product Level",
+            "icon": "pi pi-google"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "1",
+    "label": "Home & Garden",
+    "data": "SubCategory Level",
+    "icon": "pi pi-home",
+    "children": [
+      {
+        "key": "1-0",
+        "label": "Outdoor",
+        "data": "Product Level",
+        "icon": "pi pi-compass"
+      },
+      {
+        "key": "1-1",
+        "label": "Furniture",
+        "data": "Product Level",
+        "icon": "pi pi-images"
+      },
+      {
+        "key": "1-2",
+        "label": "Office",
+        "data": "Product Level",
+        "icon": "pi pi-briefcase"
+      }
+    ]
+  },
+  {
+    "key": "2",
+    "label": "Books & Media",
+    "data": "SubCategory Level",
+    "icon": "pi pi-book",
+    "children": [
+      {
+        "key": "2-0",
+        "label": "Books",
+        "data": "Product Level",
+        "icon": "pi pi-book"
+      },
+      {
+        "key": "2-1",
+        "label": "Movies & TV",
+        "data": "Product Level",
+        "icon": "pi pi-video"
+      }
+    ]
+  }
+]

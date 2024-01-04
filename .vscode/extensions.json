@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "dbaeumer.vscode-eslint",
+    "angular.ng-template",
+    "formulahendry.auto-rename-tag",
+    "EditorConfig.EditorConfig"
+  ]
+}

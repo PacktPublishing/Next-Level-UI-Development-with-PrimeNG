@@ -1,0 +1,75 @@
+{
+  "greeting": "Chào mừng đến với chương 12",
+  "primeng": {
+    "accept": "Có",
+    "cancel": "Hủy",
+    "choose": "Chọn",
+    "clear": "Làm lại",
+    "dateFormat": "dd/mm/yy",
+    "dayNames": [
+      "Chủ nhật",
+      "Thứ hai",
+      "Thứ ba",
+      "Thứ tư",
+      "Thứ năm",
+      "Thứ sáu",
+      "Thứ bảy"
+    ],
+    "dayNamesMin": [
+      "CN",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7"
+    ],
+    "dayNamesShort": [
+      "CN",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7"
+    ],
+    "firstDayOfWeek": 1,
+    "medium": "Trung bình",
+    "monthNames": [
+      "Tháng Giêng",
+      "Tháng Hai",
+      "Tháng Ba",
+      "Tháng Tư",
+      "Tháng Năm",
+      "Tháng Sáu",
+      "Tháng Bảy",
+      "Tháng Tám",
+      "Tháng Chín",
+      "Tháng Mười",
+      "Tháng Mười một",
+      "Tháng Mười hai"
+    ],
+    "monthNamesShort": [
+      "Giêng",
+      "Hai",
+      "Ba",
+      "Tư",
+      "Năm",
+      "Sáu",
+      "Bảy",
+      "Tám",
+      "Chín",
+      "Mười",
+      "Mười một",
+      "Mười hai"
+    ],
+    "passwordPrompt": "Nhập một mật khẩu",
+    "reject": "Không",
+    "strong": "Mạnh",
+    "today": "Hôm nay",
+    "weak": "Yếu",
+    "weekHeader": "Tuần"
+  },
+  "welcome": "Chào mừng đến với ứng dụng của chúng tôi.",
+  "happy": "Tôi đang cảm thấy hạnh phúc."
+}

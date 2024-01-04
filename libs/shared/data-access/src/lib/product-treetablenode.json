@@ -1,0 +1,162 @@
+[
+  {
+    "key": "0",
+    "data": {
+      "name": "Electronics"
+    },
+    "children": [
+      {
+        "key": "0-0",
+        "data": {
+          "name": "Computers"
+        },
+        "children": [
+          {
+            "key": "0-0-0",
+            "data": {
+              "id": 1,
+              "name": "MacBook Air",
+              "price": 999,
+              "description": "Light and portable MacBook",
+              "quantity": 100,
+              "rating": 4,
+              "category": "Computers"
+            }
+          },
+          {
+            "key": "0-0-1",
+            "data": {
+              "id": 2,
+              "name": "MacBook Pro",
+              "price": 1299,
+              "description": "Powerful MacBook Pro",
+              "quantity": 50,
+              "rating": 4.5,
+              "category": "Computers"
+            }
+          },
+          {
+            "key": "0-0-2",
+            "data": {
+              "id": 3,
+              "name": "Windows PC",
+              "price": 699,
+              "description": "Budget Windows laptop",
+              "quantity": 200,
+              "rating": 3.5,
+              "category": "Computers"
+            }
+          }
+        ]
+      },
+      {
+        "key": "0-1",
+        "data": {
+          "name": "Phones"
+        },
+        "children": [
+          {
+            "key": "0-1-0",
+            "data": {
+              "id": 3,
+              "name": "iPhone 13",
+              "price": 799,
+              "description": "Latest iPhone with dual camera",
+              "quantity": 150,
+              "rating": 4.3,
+              "category": "Phones"
+            }
+          },
+          {
+            "key": "0-1-1",
+            "data": {
+              "id": 4,
+              "name": "Galaxy S22",
+              "price": 849,
+              "description": "Powerful Android flagship phone",
+              "quantity": 100,
+              "rating": 4.2,
+              "category": "Phones"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "1",
+    "data": {
+      "name": "Home & Garden"
+    },
+    "children": [
+      {
+        "key": "1-0",
+        "data": {
+          "id": 4,
+          "name": "Patio Set",
+          "price": 499,
+          "description": "6-piece rattan patio furniture set",
+          "quantity": 20,
+          "rating": 4.2,
+          "category": "Outdoor"
+        }
+      },
+      {
+        "key": "1-1",
+        "data": {
+          "id": 5,
+          "name": "Sofa",
+          "price": 899,
+          "description": "Grey fabric 3-seater sofa",
+          "quantity": 50,
+          "rating": 4,
+          "category": "Furniture"
+        }
+      },
+      {
+        "key": "1-2",
+        "data": {
+          "id": 6,
+          "name": "Desk",
+          "price": 299,
+          "description": "Wood desk with drawers",
+          "quantity": 30,
+          "rating": 3.5,
+          "category": "Office"
+        }
+      }
+    ]
+  },
+  {
+    "key": "2",
+    "data": {
+      "name": "Books & Media"
+    },
+    "children": [
+      {
+        "key": "2-0",
+        "data": {
+          "id": 7,
+          "name": "Where the Crawdads Sing",
+          "price": 16.99,
+          "description": "Bestselling novel by Delia Owens",
+          "quantity": 100,
+          "rating": 4.5,
+          "category": "Books"
+        }
+      },
+      {
+        "key": "2-1",
+        "data": {
+          "id": 8,
+          "name": "Top Gun",
+          "price": 19.99,
+          "description": "Action film starring Tom Cruise",
+          "quantity": 50,
+          "rating": 4.2,
+          "category": "Movies & TV"
+        }
+      }
+    ]
+  }
+]

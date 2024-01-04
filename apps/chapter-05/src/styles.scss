@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+
+@import 'primeicons/primeicons.css';
+
+body {
+  font-family: var(--font-family);
+  margin: 4rem;
+}
+
+@keyframes input-message-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin input-message() {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 2px 13px;
+  animation-name: input-message-animation;
+  animation-duration: 400ms;
+}
+
+// Ester egg: animation for error message ;)
+.p-error {
+  @include input-message();
+}
