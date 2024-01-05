@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import {
+  AngularControlFlowComponent,
   AngularDirectivesComponent,
   AngularPipesComponent,
   AngularServicesComponent,
@@ -19,6 +20,7 @@ import {
     <primengbook-angular-directives />
     <primengbook-angular-pipes />
     <primengbook-angular-signals />
+    <primengbook-angular-control-flow />
   `,
   imports: [
     DataBindingComponent,
@@ -27,6 +29,7 @@ import {
     AngularSignalsComponent,
     AngularPipesComponent,
     DependencyInjectionComponent,
+    AngularControlFlowComponent,
   ],
 })
 export class AppComponent {}
