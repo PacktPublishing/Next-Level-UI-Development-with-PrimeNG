@@ -27,7 +27,7 @@ import { Component } from '@angular/core'
                 }} mb-3"
                 style="width:3.5rem;height:3.5rem; border-radius:10px;"
               >
-                <i class="{{ feature.icon }} text-2xl text-yellow-700"></i>
+                <i class="{{ feature.icon }} text-2xl"></i>
               </div>
               <h5 class="mb-2 text-900">{{ feature.heading }}</h5>
               <span class="text-600">{{ feature.content }}</span>
