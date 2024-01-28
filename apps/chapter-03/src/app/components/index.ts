@@ -1,3 +1,4 @@
+export * from './angular-control-flow/angular-control-flow.component'
 export * from './angular-directives/angular-directives.component'
 export * from './angular-pipes/angular-pipes.component'
 export * from './angular-services/angular-services.component'

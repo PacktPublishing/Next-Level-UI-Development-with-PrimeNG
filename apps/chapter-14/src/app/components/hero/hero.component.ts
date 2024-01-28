@@ -32,13 +32,15 @@ import { NavService } from '../../shared/services/nav.service'
           class="p-button-rounded text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"
         ></button>
       </div>
-      <div class="hidden md:flex justify-content-center md:justify-content-end">
+      <picture
+        class="hidden md:flex justify-content-center md:justify-content-end"
+      >
         <img
           src="assets/hero-image.png"
           alt="Hero Image"
           class="w-9 md:w-auto"
         />
-      </div>
+      </picture>
     </section>
   `,
 })

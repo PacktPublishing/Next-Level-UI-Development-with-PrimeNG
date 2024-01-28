@@ -69,10 +69,10 @@ export default class VisualEditorComponent implements OnInit {
 
   themes = [
     { name: 'My Awesome Theme', value: 'my-awesome-theme' },
-    // { name: 'Lara Light Blue', value: 'lara-light-blue' },
-    // { name: 'Bootstrap4 Light Purple', value: 'bootstrap4-light-purple' },
-    // { name: 'Viva Dark', value: 'viva-dark' },
-    // { name: 'Material Dark Indigo', value: 'md-dark-indigo' },
+    { name: 'Lara Light Blue', value: 'lara-light-blue' },
+    { name: 'Bootstrap4 Light Purple', value: 'bootstrap4-light-purple' },
+    { name: 'Viva Dark', value: 'viva-dark' },
+    { name: 'Material Dark Indigo', value: 'md-dark-indigo' },
   ]
 
   selectedTheme = 'my-awesome-theme'
